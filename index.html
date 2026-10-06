@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS 2.0 IPA Converter & Downloader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <svg class="logo" viewBox="0 0 100 100" width="50" height="50">
+                <rect x="10" y="10" width="80" height="80" rx="20" fill="#007AFF"/>
+                <path d="M50 25 L50 65 M35 50 L50 65 L65 50" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <line x1="30" y1="75" x2="70" y2="75" stroke="white" stroke-width="8" stroke-linecap="round"/>
+            </svg>
+            <h1>iOS 2.0 IPA Converter & Downloader</h1>
+            <p>Prepare modern App Packages for legacy iOS 2.0 environments.</p>
+        </header>
+        
+        <main>
+            <div class="drop-zone" id="dropZone">
+                <p>Drag & Drop modern .ipa / payload or click to browse</p>
+                <input type="file" id="fileInput" accept=".ipa,.zip" style="display:none">
+            </div>
+            
+            <div class="actions">
+                <button id="convertBtn" class="btn primary">Convert to iOS 2.0 Format</button>
+            </div>
+
+            <div id="status" class="status-box" style="display:none;"></div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
